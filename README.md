@@ -1,3 +1,3 @@
 # scala-spark-tutorial
 
-Bienvenidos y Bienvenidas al modulo de Big Data Processing
+Bienvenidxs al modulo de Big Data Processing con Spark y Scala
