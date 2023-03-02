@@ -18,8 +18,8 @@ object UnionLogsSolution {
     val cleanLogLines = aggregatedLogLines.filter(line => isNotHeader(line))
 
     val sample = cleanLogLines.sample(withReplacement = true, fraction = 0.1)
-
-    sample.saveAsTextFile("out/sample_nasa_logs.csv")
+    
+    for (word <- sample) println(word)
   }
 
   def isNotHeader(line: String): Boolean = !(line.startsWith("host") && line.contains("bytes"))
