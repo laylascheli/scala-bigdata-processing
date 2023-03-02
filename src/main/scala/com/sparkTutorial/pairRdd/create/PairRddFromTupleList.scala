@@ -12,6 +12,8 @@ object PairRddFromTupleList {
     val tuple = List(("Lily", 23), ("Jack", 29), ("Mary", 29), ("James", 8))
     val pairRDD = sc.parallelize(tuple)
 
-    pairRDD.coalesce(1).saveAsTextFile("out/pair_rdd_from_tuple_list")
+    pairRDD.coalesce(1)
+    
+    for (word <- pairRDD.) println(word)
   }
 }
