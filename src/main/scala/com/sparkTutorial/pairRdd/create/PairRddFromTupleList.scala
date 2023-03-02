@@ -14,6 +14,6 @@ object PairRddFromTupleList {
 
     pairRDD.coalesce(1)
     
-    for (word <- pairRDD.) println(word)
+    for (word <- pairRDD) println(word)
   }
 }
