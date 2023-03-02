@@ -18,6 +18,7 @@ object SameHostsSolution {
     val intersection = julyFirstHosts.intersection(augustFirstHosts)
 
     val cleanedHostIntersection = intersection.filter(host => host != "host")
-    cleanedHostIntersection.saveAsTextFile("out/nasa_logs_same_hosts.csv")
+    for (word <- cleanedHostIntersection) println(word)
+
   }
 }
