@@ -15,6 +15,6 @@ object PairRddFromRegularRdd {
     val pairRDD = regularRDDs.map(s => (s.split(" ")(0), s.split(" ")(1)))
     
     pairRDD.coalesce(1)
-    for (word <- pairRDD.) println(word)
+    for (word <- pairRDD) println(word)
   }
 }
