@@ -5,8 +5,7 @@ object AirportsUppercaseProblem {
   def main(args: Array[String]) {
 
     /* Create a Spark program to read the airport data from in/airports.text, generate a pair RDD with airport name
-       being the key and country name being the value. Then convert the country name to uppercase and
-       output the pair RDD to out/airports_uppercase.text
+       being the key and country name being the value. Then convert the country name to uppercase.
 
        Each row of the input file contains the following columns:
 
