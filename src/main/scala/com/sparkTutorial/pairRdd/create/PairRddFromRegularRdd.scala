@@ -13,6 +13,8 @@ object PairRddFromRegularRdd {
     val regularRDDs = sc.parallelize(inputStrings)
 
     val pairRDD = regularRDDs.map(s => (s.split(" ")(0), s.split(" ")(1)))
-    pairRDD.coalesce(1).saveAsTextFile("out/pair_rdd_from_regular_rdd")
+    
+    pairRDD.coalesce(1)
+    for (word <- pairRDD.) println(word)
   }
 }
